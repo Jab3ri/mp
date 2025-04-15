@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home page -->
+  <url>
+    <loc>https://margbrookpure.co.ke/</loc>
+    <lastmod>2025-10-01</lastmod> <!-- Update this date as needed -->
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- About Us -->
+  <url>
+    <loc>https://margbrookpure.co.ke/about</loc>
+    <lastmod>2025-01-22</lastmod> <!-- Update this date as needed -->
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Products and Services -->
+  <url>
+    <loc>https://margbrookpure.co.ke/products-services</loc>
+    <lastmod>2025-01-22</lastmod> <!-- Update this date as needed -->
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Contact Us -->
+  <url>
+    <loc>https://margbrookpure.co.ke/contact</loc>
+    <lastmod>2025-01-22</lastmod> <!-- Update this date as needed -->
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

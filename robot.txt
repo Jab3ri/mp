@@ -1,0 +1,60 @@
+# robots.txt for Margbrook Pure Website
+
+# Allow all search engines
+User -agent: *
+Disallow: /api/                     # Disallow access to API endpoints
+Disallow: /_next/                   # Disallow Next.js build files
+Disallow: /static/private/          # Disallow access to private static files
+Disallow: /admin/                   # Disallow access to admin panel
+Disallow: /config/                  # Disallow access to configuration files
+Disallow: /database/                # Disallow access to database files
+
+# Block specific private files
+Disallow: /secret.html              # Block access to secret.html
+Disallow: /hidden-files/            # Block access to hidden files directory
+
+# Allow public files
+Allow: /static/                     # Allow access to public static files
+
+# Sitemap for search engines
+Sitemap: https://margbrookpure.co.ke/sitemap.xml
+
+# Block all bots from private directories (just in case they use different crawlers)
+User -agent: *
+Disallow: /private/                 # Disallow access to private directories
+Disallow: /temp/                    # Disallow access to temporary files
+Disallow: /backup/                  # Disallow access to backup files
+Disallow: /drafts/                  # Disallow access to draft files
+
+# Specific bots can be denied
+User -agent: AhrefsBot
+Disallow: /                         # Block AhrefsBot entirely
+
+User -agent: SemrushBot
+Disallow: /                         # Block SemrushBot entirely
+
+# Crawl delay for bots that follow this directive
+Crawl-delay: 10                     # Delay between requests for bots that respect this directive
+
+# Notes for context (optional and ignored by bots)
+# - The /api/ and /_next/ folders are Next.js-specific and shouldn't be indexed.
+# - Sensitive files like /config/, /database/, and other user directories are disallowed.
+# - Bots known for data scraping (e.g., AhrefsBot) are blocked.
+
+# Disallow everything in non-production environments
+User -agent: *
+Disallow: /                         # Disallow everything in non-production environments
+
+# Allow Googlebot to access specific pages
+User -agent: Googlebot
+Allow: /products-services            # Allow Googlebot to access the products-services page
+Disallow: /admin/                   # Disallow Googlebot from accessing the admin panel
+
+# Block query parameters for all user agents
+User -agent: *
+Disallow: /*?*                      # Disallow URLs with query parameters
+
+# Manage image access
+User -agent: *
+Disallow: /images/private/          # Disallow access to private images
+Allow: /images/public/              # Allow access to public images
