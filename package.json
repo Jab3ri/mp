@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && postcss styles/styles.css -o styles/styles.min.css",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "export": "next export",
     "lint": "next lint"
   },
